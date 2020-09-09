@@ -31,7 +31,8 @@
     "eslint-config-important-stuff": "^1.1.0",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.2.0",
-    "gulp-concat": "^2.6.1"
+    "gulp-concat": "^2.6.1",
+    "http-server": "^0.12.3"
   },
   "dependencies": {
     "single-spa-angularjs": "^3.2.0"

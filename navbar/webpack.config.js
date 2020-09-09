@@ -15,6 +15,9 @@ module.exports = (webpackConfigEnv) => {
       libraryTarget: "system",
       path: path.resolve(__dirname, "dist"),
     },
+    devServer: {
+      port: 8085,
+    },
     module: {
       rules: [
         {

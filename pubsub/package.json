@@ -5,7 +5,8 @@
   "main": "dist/pubsub.js",
   "private": true,
   "scripts": {
-    "start": "npm run build:dev && serve -l 9998 -C",
+    "start": "npm run build:dev",
+    "poststart": "npm run serve",
     "start:dev": "webpack-dev-server",
     "build:dev": "webpack --mode development",
     "build": "webpack --mode production",

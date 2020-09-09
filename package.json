@@ -1,0 +1,13 @@
+{
+  "name": "MFE_POC2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/OClement/single-spa_layout_test.git",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"yarn --cwd ./account-settings/ start\" \"yarn --cwd ./clients serve\" \"yarn --cwd ./coexisting-angular-microfrontends/app1 start\" \"yarn --cwd ./navbar start\" \"yarn --cwd ./root-config start\" \"yarn --cwd ./shared-dependencies start\" \"yarn --cwd ./styleguide start\" \"yarn --cwd ./wcLib dev\" \"yarn --cwd pubsub start\" "
+  },
+  "dependencies": {
+    "concurrently": "^5.3.0"
+  }
+}

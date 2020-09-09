@@ -1,29 +1,18 @@
 import { registerApplication, start } from "single-spa";
-
-registerApplication({
-  name: "@polyglot-mf/navbar",
-  app: () => System.import("@polyglot-mf/navbar"),
-  activeWhen: "/",
+import {
+  constructApplications,
+  constructRoutes,
+  constructLayoutEngine,
+} from "single-spa-layout";
+const routes = constructRoutes(document.querySelector("#single-spa-layout"));
+const applications = constructApplications({
+  routes,
+  loadApp({ name }) {
+    return System.import(name);
+  },
 });
-
-registerApplication({
-  name: "@polyglot-mf/clients",
-  app: () => System.import("@polyglot-mf/clients"),
-  activeWhen: "/clients",
-});
-
-registerApplication({
-  name: "@polyglot-mf/account-settings",
-  app: () => loadWithoutAmd("@polyglot-mf/account-settings"),
-  activeWhen: "/settings",
-});
-
-registerApplication({
-  name: "test/app1",
-  app: () => System.import("@live-poc/app1"),
-  activeWhen: "/app1",
-});
-
+const layoutEngine = constructLayoutEngine({ routes, applications });
+applications.forEach(registerApplication);
 start();
 
 // A lot of angularjs libs are compiled to UMD, and if you don't process them with webpack
