@@ -1,0 +1,32 @@
+{
+  "name": "pubsub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/pubsub.js",
+  "private": true,
+  "scripts": {
+    "start": "npm run build:dev && serve -l 9998 -C",
+    "start:dev": "webpack-dev-server",
+    "build:dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "serve": "serve -l 9998 -C",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "serve": "^11.3.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2",
+    "core-js": "^3.6.5",
+    "rxjs": "^6.6.2"
+  }
+}

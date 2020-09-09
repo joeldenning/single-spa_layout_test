@@ -1,0 +1,22 @@
+{
+  "imports": {
+    "@polyglot-mf/root-config": "https://polyglot.microfrontends.app/root-config/118d9491dfa7a91477066f80e9485d524037a26d/polyglot-mf-root-config.js",
+    "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.3.4/lib/system/single-spa.min.js",
+    "react": "https://cdn.jsdelivr.net/npm/react@16.12.0/umd/react.production.min.js",
+    "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.12.0/umd/react-dom.production.min.js",
+    "@polyglot-mf/navbar": "http://localhost:8080/navbar.js",
+    "@polyglot-mf/styleguide": "https://polyglot.microfrontends.app/styleguide/03ff9ff03467d412a683a72cdb34e255bb68f58f/polyglot-mf-styleguide.js",
+    "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js",
+    "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@3.1.5/dist/vue-router.min.js",
+    "@polyglot-mf/clients": "http://localhost:8500/js/app.js",
+    "@polyglot-mf/account-settings": "https://polyglot.microfrontends.app/account-settings/379b52175c9f274743f7e469a7e3477b6ed6b927/polyglot-mf-account-settings.js",
+    "single-spa-angularjs": "https://cdn.jsdelivr.net/npm/single-spa-angularjs@3.2.0/lib/single-spa-angularjs.js",
+    "@polyglot-mf/navbar/": "https://polyglot.microfrontends.app/navbar/2edcce48f3ab1a714ee11c383cba44ab5469e96a/",
+    "@polyglot-mf/root-config/": "https://polyglot.microfrontends.app/root-config/118d9491dfa7a91477066f80e9485d524037a26d/",
+    "@polyglot-mf/styleguide/": "https://polyglot.microfrontends.app/styleguide/03ff9ff03467d412a683a72cdb34e255bb68f58f/",
+    "@polyglot-mf/clients/": "http://localhost:8500/",
+    "@live-poc/app1": "http://localhost:4201/main.js",
+    "pubsub": "http://localhost:9998/dist/pubsub.js",
+    "@live-poc/wclib": "http://localhost:8010/proxy/build/bundle.js"
+  }
+}

@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Angular App
+  </h1>
+</div>
+<router-outlet></router-outlet>
+<ul>
+  <li>
+    <h2><a [routerLink]="['app1/profile']">View Last Dispatched Profile</a></h2>
+  </li>
+
+  <hr />
+
+  <h1>WebComp Demo</h1>
+  <svelte-switch #switchComp label="label From Angular -> {{isChecked}}" customIndicator="{{customStyle}}">
+  </svelte-switch>
+  <p>
+    From Angular itself using #ref: {{switchComp.checked}}
+  </p>
+
+</ul>

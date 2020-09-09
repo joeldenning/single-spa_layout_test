@@ -1,0 +1,24 @@
+{
+  "name": "shared-dependencies",
+  "version": "1.0.0",
+  "description": "[![CircleCI](https://circleci.com/gh/polyglot-microfrontends/shared-dependencies.svg?style=svg)](https://circleci.com/gh/polyglot-microfrontends/shared-dependencies)",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve -l 9999 -C",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polyglot-microfrontends/shared-dependencies.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/polyglot-microfrontends/shared-dependencies/issues"
+  },
+  "homepage": "https://github.com/polyglot-microfrontends/shared-dependencies#readme",
+  "devDependencies": {
+    "serve": "^11.3.2"
+  }
+}
