@@ -9,7 +9,7 @@
   <meta name="importmap-type" content="systemjs-importmap" />
   <script src="https://unpkg.com/zone.js"></script>
   <!-- <script type="systemjs-importmap" src="https://storage.googleapis.com/polyglot.microfrontends.app/importmap.json"></script> -->
-  <script type="systemjs-importmap" src="http://localhost:9999/importmap.json"></script>
+  <!-- <script type="systemjs-importmap" src="http://localhost:9999/importmap.json"></script> -->
   <% if (isLocal) { %>
   <script type="systemjs-importmap">
     {
@@ -47,8 +47,8 @@
 <body>
   <script>
     System.import('@polyglot-mf/root-config');
-    System.import('@polyglot-mf/styleguide');
-    System.import('@live-poc/wclib');
+    // System.import('@polyglot-mf/styleguide');
+    // System.import('@live-poc/wclib');
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>
